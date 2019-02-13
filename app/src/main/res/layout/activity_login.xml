@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLay"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blackbackground">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/size_100"
+        android:background="@drawable/login_shape"
+        android:layout_marginBottom="@dimen/size_20">
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_50"
+            android:textSize="@dimen/tx_size_16"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/blackbackground"
+            android:layout_marginLeft="@dimen/size_30"
+            android:layout_marginRight="@dimen/size_30"
+            android:text="@string/welcomebeora"/>
+        <TextView
+            android:id="@+id/tv_sub_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_header"
+            android:layout_marginTop="@dimen/size_5"
+            android:layout_marginLeft="@dimen/size_30"
+            android:layout_marginRight="@dimen/size_30"
+            android:text="@string/beorawater"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:textColor="@color/blackbackground"
+            android:textSize="@dimen/tx_size_20"/>
+
+        <TextView
+            android:id="@+id/tv_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sub_header"
+            android:text="@string/login_to"
+            android:layout_marginTop="@dimen/size_10"
+            android:layout_marginLeft="@dimen/size_30"
+            android:layout_marginRight="@dimen/size_30"
+            android:textSize="@dimen/tx_size_13"
+            android:textColor="@color/blackbackground"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10"
+            android:layout_marginLeft="@dimen/size_30"
+            android:layout_marginRight="@dimen/size_40"
+            android:layout_below="@+id/tv_continue"
+            android:id="@+id/layout_user"
+            android:textSize="@dimen/tx_size_16"
+            android:theme="@style/TextLabel">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/ed_user_name"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/blackbackground"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/font_color"
+                android:textSize="@dimen/tx_size_18"
+                android:imeOptions="actionNext"
+                android:hint="@string/emil" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10"
+            android:layout_marginLeft="@dimen/size_30"
+            android:layout_marginRight="@dimen/size_40"
+            android:layout_below="@+id/layout_user"
+            android:textSize="@dimen/tx_size_16"
+            android:id="@+id/layout_password"
+            android:theme="@style/TextLabel" >
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_password"
+                android:fontFamily="@font/poppins_regular"
+                android:textColorHint="@color/blackbackground"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:textColor="@color/font_color"
+                android:textSize="@dimen/tx_size_18"
+                android:hint="@string/password" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_password"
+            android:layout_marginTop="@dimen/size_50"
+            android:background="@drawable/login_button"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size_70"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="@color/blackbackground"
+            android:textSize="@dimen/tx_size_18"
+            android:fontFamily="@font/poppins_medium"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
